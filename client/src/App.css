@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.header{
+  border:1px black solid;
+  width:50%;
+  margin:0 auto;
+  padding:40px;
+  margin-top:10px;
+}
