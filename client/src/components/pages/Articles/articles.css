@@ -1,16 +1,81 @@
 .jumbo-container{
     width:100%;
     margin:0 auto;
-    border:2px rgb(21, 21, 75) solid;
+    border:2px gray solid;
     text-align: center;
     padding:100px 0px;
     background-image:url("newphoto.jpg");
     background-size:auto;
     background-repeat: no-repeat;
     background-position: center;
+    color:white;
+    letter-spacing:2px;
+    text-transform: uppercase;
 }
 
 .container-all{
     width:100%;
     margin:0 auto;
+    text-align: center;
+}
+
+form{
+    margin-bottom:50px;
+}
+
+.saved-list{
+    list-style-type: none;
+}
+
+input{
+    height:30px;
+    margin:5px;
+    width:300px;
+}
+
+.saved-container{
+    border:2px gray solid;
+    margin-top:40px;
+    background-color:rgba(0,0,0,0.1);
+    color:white;
+
+}
+
+.resultsWrap{
+    border:1px gray solid;
+}
+
+.btn{
+    margin-left:10px;
+    padding:5px;
+    font-size:13px;
+    font-weight: bold;
+    border-radius:5px;
+    box-shadow:1px 1px 1px gray;
+}
+
+.btn:hover{
+    background-color:gray;
+    color:white;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    color:gray;
+}
+
+
+h3{
+    /* border:1px red solid; */
+    margin-bottom:-25px;
+    color:black;
+}
+
+#results-title{
+    border-top:1px gray solid;
+    margin-top:20px;
+    padding-top:20px;
 }
