@@ -79,9 +79,15 @@ class Articles extends Component {
           })
             .then(res => this.loadArticles())
             .catch(err => console.log(err));
+     };
 
+     deleteArticle = id => {
+        API.deleteArticle(id)
+          .then(res => this.loadArticles())
+          .catch(err => console.log(err));
       };
 
+     
 render() {
 return (
 <div className="container-all">
@@ -119,6 +125,7 @@ return (
         {this.state.articles.map(article => (
         <ListItem key={article._id}>
            <a target="_blank" href={article.url}> {article.title} by {article.author}</a>
+           <Button onClick={() => this.deleteArticle(article._id)}> delete </Button>
         </ListItem>
         ))}
     </List>
